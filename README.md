@@ -23,7 +23,7 @@ None.
 ## Example Playbook
 ```
 $ ansible-galaxy install stockhausenj.visual-studio-code
-$ ansible-playbook -i inventory.yaml setup-vs-code.yaml -u admin --ask-pass
+$ ansible-playbook -i inventory.yml main.yaml -u admin --ask-pass
 ```
 ```
 - hosts: all
