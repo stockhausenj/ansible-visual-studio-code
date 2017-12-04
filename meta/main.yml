@@ -1,0 +1,13 @@
+galaxy_info:
+  author: stockhausenj
+  description: Visual Studio Code installation for Windows
+  company: ""
+  license: "license (MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: Windows
+      versions:
+        - all
+  galaxy_tags:
+    - development
+dependencies: []
