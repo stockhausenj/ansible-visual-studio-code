@@ -1,9 +1,11 @@
 ---
-- name: Download Visual Studio Code Exe
+- name: Download Visual Studio Code Zip
   win_get_url:
-    url: https://go.microsoft.com/fwlink/?Linkid=852157
-    dest: C:\Users\{{ ansible_user }}\Downloads\vs_code-install.exe
-- name: Install Visual Studio Code
-  win_package:
-    path: C:\Users\{{ ansible_user }}\Downloads\vs_code-install.exe
-    state: present
+    url: https://go.microsoft.com/fwlink/?Linkid=850641
+    dest: C:\Users\{{ ansible_user }}\Downloads\vs-code.zip
+
+- name: Unzip Visual Studio Code
+  win_unzip:
+    src: C:\Users\{{ ansible_user }}\Downloads\vs-code.zip
+    dest: C:\Users\{{ ansible_user }}\Downloads\vs-code
+    creates: C:\Users\{{ ansible_user }}\Downloads\vs-code
