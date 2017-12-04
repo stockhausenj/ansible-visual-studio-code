@@ -5,5 +5,5 @@
     dest: C:\Users\{{ ansible_user }}\Downloads\vs_code-install.exe
 - name: Install Visual Studio Code
   win_package:
-    dest: C:\Users\{{ ansible_user }}\Downloads\vs_code-install.exe
+    path: C:\Users\{{ ansible_user }}\Downloads\vs_code-install.exe
     state: present
